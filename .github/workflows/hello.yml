@@ -1,0 +1,10 @@
+name: Hello Pipeline
+
+on: [push]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dizer Hello
+        run: echo "Hello World"
