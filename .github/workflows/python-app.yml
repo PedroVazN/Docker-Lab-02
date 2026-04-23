@@ -27,9 +27,8 @@ jobs:
       - name: Lint com Flake8
         run: |
           pip install flake8
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 . --select=E9,F63,F7,F82
 
       - name: Rodar testes
         run: |
-          time python -m pytest tests/ -v --tb=short
-        
+          time python -m pytest -v --tb=short
